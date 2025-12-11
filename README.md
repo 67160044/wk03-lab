@@ -12,7 +12,7 @@
 
 ---
 
-## �� File Structure
+## 📁 File Structure
 
 ```
 wk03-lab/
@@ -23,59 +23,70 @@ wk03-lab/
 ├── positioning.html # Positioning examples
 ├── display-layout.html # Display & Layout
 └── README.md # Documentation
-...
+```
+
 ---
-## ������ Key Concepts
+
+## 🎯 Key Concepts
+
 ### CSS Selectors Priority (Specificity)
-```
-
-Universal (\*) < Element < Class < ID < Inline Style
 
 ```
+Universal (*) < Element < Class < ID < Inline Style
+```
+
 ยิ่งเฉพาะเจาะจง priority ยิ่งสูง
+
 ### Box Model
-```
 
+```
 Content → Padding → Border → Margin
-
 ```
+
 - **Content**: เนื้อหาจริง (text, images, etc.)
 - **Padding**: ระยะห่างด้านใน (ระหว่าง content และ border)
 - **Border**: กรอบรอบ element
 - **Margin**: ระยะห่างด้านนอก (ระหว่าง element นี้กับ element อื่น)
+
 ### Positioning Values
-| Position | อ้างอิงกับ | ใช้เมื่อ | ตัวอย่าง |
+
+| Position     | อ้างอิงกับ            | ใช้เมื่อ            | ตัวอย่าง        |
 | ------------ | --------------------- | ------------------- | --------------- |
-| **static** | Document flow | ไม่ต้องย้าย | ข้อความปกติ |
-| **relative** | ตําแหน่งเดิม | ปรับแต่งเล็กน้อย | ย้ายข้อความขึ้น |
-| **absolute** | Parent ที่มี position | วางตําแหน่งอิสระ | Badge, tooltip |
-| **fixed** | Viewport | ติดกับหน้าจอ | Navbar, button |
-| **sticky** | Parent + Viewport | ติดเมื่อ scroll ถึง | Table header |
+| **static**   | Document flow         | ไม่ต้องย้าย         | ข้อความปกติ     |
+| **relative** | ตําแหน่งเดิม          | ปรับแต่งเล็กน้อย    | ย้ายข้อความขึ้น |
+| **absolute** | Parent ที่มี position | วางตําแหน่งอิสระ    | Badge, tooltip  |
+| **fixed**    | Viewport              | ติดกับหน้าจอ        | Navbar, button  |
+| **sticky**   | Parent + Viewport     | ติดเมื่อ scroll ถึง | Table header    |
+
 ### Display Values
-| Display | Width/Height | Line Break | ใช้เมื่อ |
+
+| Display          | Width/Height | Line Break | ใช้เมื่อ          |
 | ---------------- | ------------ | ---------- | ----------------- |
-| **block** | �� Yes | �� Yes | Paragraph, div |
-| **inline** | � No | � No | span, link |
-| **inline-block** | �� Yes | � No | Button, small box |
-| **flex** | �� Yes | Flexible | Flexible layout |
-| **grid** | �� Yes | Flexible | Complex layout |
-| **none** | N/A | N/A | Hide element |
+| **block**        | ✅️ Yes      | ✅️ Yes    | Paragraph, div    |
+| **inline**       | ❌ No        | ❌ No      | span, link        |
+| **inline-block** | ✅️ Yes      | ❌ No      | Button, small box |
+| **flex**         | ✅️ Yes      | Flexible   | Flexible layout   |
+| **grid**         | ✅️ Yes      | Flexible   | Complex layout    |
+| **none**         | N/A          | N/A        | Hide element      |
+
 ### CSS Units (หน่วยวัด)
-| Unit | ตัวอักษร | อ้างอิงกับ | Responsive | ใช้เมื่อ |
-| ------------------- | -------- | ---------------- | ---------- | -----------------------------
--------- |
-| **Pixel** | px | ไม่มี (fixed) | � No | Borders, fixed layouts,
-precision |
-| **Percentage** | % | Parent element | �� Yes | Responsive widths, flexible
-layouts |
-| **Em** | em | Parent font-size | �� Yes | Scalable components,
-spacing |
-| **Rem** | rem | Root font-size | �� Yes | Consistent sizing, typography
-(แนะนํา) |
-| **Viewport Width** | vw | Viewport width | �� Yes | Full-width
-sections |
-| **Viewport Height** | vh | Viewport height | �� Yes | Full-height
-sections |
-**����� ทิป:** ใช้ `rem` และ `%` เป็นหลัก เพราะช่วยให้เว็บไซต์ตอบสนองต่อขนาดจอต่างๆ ได้ดีขึ้น
+
+| Unit                | ตัวอักษร | อ้างอิงกับ       | Responsive | ใช้เมื่อ                      |
+| ------------------- | -------- | ---------------- | ---------- | ----------------------------- |
+| --------            |
+| **Pixel**           | px       | ไม่มี (fixed)    | ❌ No      | Borders, fixed layouts,       |
+| precision           |
+| **Percentage**      | %        | Parent element   | ✅️ Yes    | Responsive widths, flexible   |
+| layouts             |
+| **Em**              | em       | Parent font-size | ✅️ Yes    | Scalable components,          |
+| spacing             |
+| **Rem**             | rem      | Root font-size   | ✅️ Yes    | Consistent sizing, typography |
+| (แนะนํา)            |
+| **Viewport Width**  | vw       | Viewport width   | ✅️ Yes    | Full-width                    |
+| sections            |
+| **Viewport Height** | vh       | Viewport height  | ✅️ Yes    | Full-height                   |
+| sections            |
+
+**💡 ทิป:** ใช้ `rem` และ `%` เป็นหลัก เพราะช่วยให้เว็บไซต์ตอบสนองต่อขนาดจอต่างๆ ได้ดีขึ้น
+
 ---
-```
