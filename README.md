@@ -1,14 +1,19 @@
 # Week 3 Lab: CSS Fundamentals
+
 ## ปฏิบัติการนี้ครอบคลุมเนื้อหา CSS ตั้งแต่พื้นฐาน ได้แก่
+
 1. **CSS Syntax & Properties** - โครงสร้างและคุณสมบัติพื้นฐาน
 2. ** CSS Units** - หน่วยวัดต่าง ๆ ของ CSS
-2. **CSS Selectors** - การเลือก element ด้วย selector ต่างๆ
-3. **Colors & Text** - การจัดรูปแบบสี และข้อความ
-4. **Box Model** - การทําความเข้าใจ Content, Padding, Border, Margin
-5. **Positioning** - Static, Relative, Absolute, Fixed, Sticky
-6. **Display & Layout** - Block, Inline, Flexbox, Grid
+3. **CSS Selectors** - การเลือก element ด้วย selector ต่างๆ
+4. **Colors & Text** - การจัดรูปแบบสี และข้อความ
+5. **Box Model** - การทําความเข้าใจ Content, Padding, Border, Margin
+6. **Positioning** - Static, Relative, Absolute, Fixed, Sticky
+7. **Display & Layout** - Block, Inline, Flexbox, Grid
+
 ---
+
 ## �� File Structure
+
 ```
 wk03-lab/
 ├── index.html # หน้าแรก
@@ -23,12 +28,16 @@ wk03-lab/
 ## ������ Key Concepts
 ### CSS Selectors Priority (Specificity)
 ```
-Universal (*) < Element < Class < ID < Inline Style
+
+Universal (\*) < Element < Class < ID < Inline Style
+
 ```
 ยิ่งเฉพาะเจาะจง priority ยิ่งสูง
 ### Box Model
 ```
+
 Content → Padding → Border → Margin
+
 ```
 - **Content**: เนื้อหาจริง (text, images, etc.)
 - **Padding**: ระยะห่างด้านใน (ระหว่าง content และ border)
@@ -69,3 +78,4 @@ sections |
 sections |
 **����� ทิป:** ใช้ `rem` และ `%` เป็นหลัก เพราะช่วยให้เว็บไซต์ตอบสนองต่อขนาดจอต่างๆ ได้ดีขึ้น
 ---
+```
